@@ -1,0 +1,479 @@
+/**
+ * Mixins
+ */
+/**
+ * Variables
+ */
+/* line 19, ../sass/jeff.scss */
+body {
+  background: white url("../images/mountain_bg.png") no-repeat 50% 100%;
+  color: #222222;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+/* line 24, ../sass/jeff.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', helvetica, arial, sans-serif;
+}
+
+/* line 27, ../sass/jeff.scss */
+a {
+  color: #0077c0;
+  transition: all 0.5s ease;
+}
+/* line 32, ../sass/jeff.scss */
+a:hover, a:active {
+  color: #aaaaaa;
+}
+
+/**
+ * Header
+ */
+/* line 40, ../sass/jeff.scss */
+#header {
+  background: #222222;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 5px;
+}
+/* line 50, ../sass/jeff.scss */
+#header .region-inner {
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+}
+
+/* line 56, ../sass/jeff.scss */
+#logo {
+  padding: 0;
+}
+@media all and (max-width: 550px) {
+  /* line 56, ../sass/jeff.scss */
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 64, ../sass/jeff.scss */
+.header__name-and-slogan {
+  float: none;
+  text-indent: -20000px;
+}
+
+/* line 69, ../sass/jeff.scss */
+#navigation {
+  height: auto;
+  position: absolute;
+  right: 1em;
+  width: auto;
+}
+/* line 75, ../sass/jeff.scss */
+#navigation #main-menu ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 79, ../sass/jeff.scss */
+#navigation #main-menu ul li {
+  line-height: 64px;
+  margin-right: 1em;
+  padding: 0;
+  vertical-align: middle;
+}
+@media all and (max-width: 550px) {
+  /* line 79, ../sass/jeff.scss */
+  #navigation #main-menu ul li {
+    line-height: 1;
+    display: inline-block;
+    float: none;
+    margin: 0 1em;
+    padding: 1em 0;
+  }
+}
+/* line 93, ../sass/jeff.scss */
+#navigation #main-menu ul li a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+/* line 98, ../sass/jeff.scss */
+#navigation #main-menu ul li a:hover, #navigation #main-menu ul li a:active {
+  color: white;
+}
+@media all and (max-width: 550px) {
+  /* line 69, ../sass/jeff.scss */
+  #navigation {
+    position: initial;
+    text-align: center;
+  }
+  /* line 109, ../sass/jeff.scss */
+  #navigation ul.main-menu {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* line 116, ../sass/jeff.scss */
+.highlighted-wrapper {
+  background: white url("../images/code_bg.jpg") no-repeat 50% 0;
+  background-attachment: fixed;
+  padding: 8em 0 3em;
+}
+/* line 121, ../sass/jeff.scss */
+.highlighted-wrapper .region-inner {
+  margin: 0 auto;
+  max-width: 960px;
+}
+@media all and (max-width: 550px) {
+  /* line 116, ../sass/jeff.scss */
+  .highlighted-wrapper {
+    padding-top: 12em;
+  }
+}
+
+/* social nav */
+/* line 132, ../sass/jeff.scss */
+#block-menu-menu-social-menu {
+  text-align: center;
+}
+/* line 135, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 139, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+  padding: 0;
+  vertical-align: top;
+}
+@media all and (max-width: 550px) {
+  /* line 139, ../sass/jeff.scss */
+  #block-menu-menu-social-menu ul li {
+    margin: 0 0.25em;
+  }
+}
+/* line 149, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav {
+  display: block;
+  height: 32px;
+  text-indent: -20000px;
+  width: 32px;
+}
+/* line 155, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.fb {
+  background: #3b5998 url("../images/facebook-32.png") no-repeat center center;
+}
+/* line 156, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.tw {
+  background: #00aced url("../images/twitter-32.png") no-repeat center center;
+}
+/* line 157, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.cc {
+  background: #0088cc url("../images/codecademy-32.png") no-repeat center center;
+}
+/* line 158, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.gh {
+  background: #4183c4 url("../images/github-32.png") no-repeat center center;
+}
+/* line 159, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.cp {
+  background: #231f20 url("../images/codepen-32.png") no-repeat center center;
+}
+/* line 160, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav.dr {
+  background: #0077c0 url("../images/drupal-32.png") no-repeat center center;
+}
+/* line 163, ../sass/jeff.scss */
+#block-menu-menu-social-menu ul li .social-nav:hover, #block-menu-menu-social-menu ul li .social-nav:active {
+  background-color: #aaaaaa;
+}
+
+/**
+ * Main Content
+ */
+/* line 172, ../sass/jeff.scss */
+a.anchor-link {
+  float: left;
+  margin-top: -9em;
+}
+@media all and (max-width: 550px) {
+  /* line 172, ../sass/jeff.scss */
+  a.anchor-link {
+    margin-top: -10em;
+  }
+}
+
+/* line 180, ../sass/jeff.scss */
+.front h2.node-title {
+  font-size: 2em;
+}
+
+/* line 183, ../sass/jeff.scss */
+.front .node-page > p {
+  margin-top: 0;
+}
+
+/* line 186, ../sass/jeff.scss */
+h2.about {
+  font-size: 2em;
+  line-height: 1.35;
+  margin: 0;
+  text-align: center;
+}
+@media all and (max-width: 550px) {
+  /* line 186, ../sass/jeff.scss */
+  h2.about {
+    font-size: 1.5em;
+  }
+}
+
+/* line 197, ../sass/jeff.scss */
+#block-views-projects-block-1 {
+  overflow: hidden;
+}
+/* line 200, ../sass/jeff.scss */
+#block-views-projects-block-1 h2.block-title {
+  font-size: 2em;
+}
+
+/* line 205, ../sass/jeff.scss */
+.view-projects .views-row {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 600px) {
+  /* line 205, ../sass/jeff.scss */
+  .view-projects .views-row {
+    float: none;
+    width: 100%;
+  }
+  /* line 215, ../sass/jeff.scss */
+  .view-projects .views-row h2.node-title {
+    font-size: 1.5em;
+  }
+}
+/* line 220, ../sass/jeff.scss */
+.view-projects .views-row article {
+  position: relative;
+}
+/* line 223, ../sass/jeff.scss */
+.view-projects .views-row article header {
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* line 232, ../sass/jeff.scss */
+.view-projects .views-row article header a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 238, ../sass/jeff.scss */
+.view-projects .views-row article img {
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 243, ../sass/jeff.scss */
+.view-projects .views-row article a.image-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  color: #222222;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  z-index: 2;
+}
+/* line 255, ../sass/jeff.scss */
+.view-projects .views-row article a.image-overlay .field-items {
+  bottom: 1em;
+  font-size: 1.25em;
+  position: absolute;
+  left: 1em;
+}
+/* line 261, ../sass/jeff.scss */
+.view-projects .views-row article a.image-overlay .field-items > div {
+  margin: 1em 0;
+}
+/* line 266, ../sass/jeff.scss */
+.view-projects .views-row article:hover a.image-overlay {
+  opacity: 1;
+}
+
+/**
+ * Footer
+ */
+/* line 276, ../sass/jeff.scss */
+.copyright {
+  margin: 8em 0 1em;
+  padding: 0;
+  text-align: center;
+}
+
+/**
+ * Forms
+ */
+/* line 285, ../sass/jeff.scss */
+.form-item {
+  margin: 1em auto;
+  padding: 0;
+  max-width: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 292, ../sass/jeff.scss */
+.form-item.label-hidden label {
+  display: none;
+}
+/* line 297, ../sass/jeff.scss */
+.form-item input,
+.form-item textarea {
+  border: 1px solid #aaaaaa;
+  border-radius: 2px;
+  font-size: 1.25em;
+  padding: 0.25em 0.5em;
+}
+
+/* line 304, ../sass/jeff.scss */
+.messages--status p {
+  margin: 0;
+}
+
+/* line 307, ../sass/jeff.scss */
+.form-actions {
+  clear: both;
+  text-align: center;
+}
+/* line 311, ../sass/jeff.scss */
+.form-actions input {
+  background: #0077c0;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+/* line 324, ../sass/jeff.scss */
+.form-actions input:hover, .form-actions input:active {
+  background: #aaaaaa;
+}
+
+/* line 329, ../sass/jeff.scss */
+.btn-wrapper {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* line 334, ../sass/jeff.scss */
+.btn,
+.btn-wrapper a {
+  clear: both;
+  text-align: center;
+  background: #0077c0;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+/* line 351, ../sass/jeff.scss */
+.btn:hover, .btn:active,
+.btn-wrapper a:hover,
+.btn-wrapper a:active {
+  background: #aaaaaa;
+}
+
+/**
+ * Overlay
+ */
+/* line 359, ../sass/jeff.scss */
+#overlay {
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* line 371, ../sass/jeff.scss */
+#overlay .overlay-wrapper {
+  background: #fff;
+  border-radius: 2px;
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+  max-width: 910px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (max-width: 960px) {
+  /* line 371, ../sass/jeff.scss */
+  #overlay .overlay-wrapper {
+    width: 90%;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 371, ../sass/jeff.scss */
+  #overlay .overlay-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+/* line 389, ../sass/jeff.scss */
+#overlay .overlay-wrapper .overlay-close {
+  color: #aaaaaa;
+  cursor: pointer;
+  font-size: 2em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+/* line 397, ../sass/jeff.scss */
+#overlay .overlay-wrapper .overlay-close:hover {
+  color: #222222;
+}
+/* line 404, ../sass/jeff.scss */
+#overlay .overlay-wrapper .overlay-content article img {
+  width: 100%;
+}
+
+/* line 411, ../sass/jeff.scss */
+#overlay.open {
+  display: block;
+}
+
+/* line 414, ../sass/jeff.scss */
+body.overlay-open {
+  overflow: hidden;
+}
